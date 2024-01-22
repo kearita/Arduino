@@ -1,3 +1,8 @@
+/**
+  * This program represents a digital hourglass in which 6 LEDs are lit one at a time after
+  * 10 minutes have passed, and a tilt sensor is used to restart the clock. After 60 minutes
+  * have passed, the switch is closed and all LEDs will be turned off.  
+**/
 const int switchPin = 8; // tilt sensor location
 unsigned long prevTime = 0; // holds time an LED was last changed
 int switchState = 0; // compare switch's position from one loop to next
